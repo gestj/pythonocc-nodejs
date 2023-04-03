@@ -52,6 +52,7 @@ WORKDIR /src-occt/build
 RUN cmake ..\
       -DCMAKE_BUILD_TYPE=Release \
       -DCMAKE_INSTALL_PREFIX=/usr/occt  \
+      -DOCCT_MMGT_OPT_DEFAULT=1 \
       -DUSE_FREETYPE=true \
       -DUSE_FREEIMAGE=true \
       -DUSE_OPENVR=false \
