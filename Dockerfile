@@ -98,8 +98,8 @@ MAINTAINER Johannes Gest <kiiu.rib@gmail.com>
 
 ARG DEBIAN_FRONTEND=noninteractive
 
-ARG NODE_VERSION=19
-ARG NPM_VERSION=9
+ARG NODE_VERSION=19.6.0
+ARG NPM_VERSION=9.4.0
 
 COPY --from=build /usr/occt /usr/local
 COPY --from=build /usr/tbb /usr/local
